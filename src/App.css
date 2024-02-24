@@ -1,0 +1,361 @@
+* {
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+
+html,
+body,
+div,
+span,
+h2,
+p,
+a,
+img,
+strong,
+ol,
+li,
+aside,
+footer,
+header,
+nav {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  vertical-align: baseline;
+}
+
+body {
+  background-color: black;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 70%;
+  margin: 48px auto;
+}
+
+.rounded {
+  border-radius: 16px;
+}
+
+.content-wrapper {
+  padding: 64px;
+  margin-bottom: 32px;
+  display: grid;
+  background-color: white;
+  grid-template-columns: 1fr min(90%, 100%) 1fr;
+  overflow: hidden;
+  border-bottom-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+}
+
+.content-wrapper > * {
+  grid-column: 2 / auto;
+}
+
+/* ///////////////////////////////////////// */
+.main-img {
+  display: block;
+  width: 100%;
+}
+
+.text-color {
+  color: hsl(222deg, 22%, 5%);
+}
+
+strong {
+  font-weight: 700;
+}
+
+.main-title-bg {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  mix-blend-mode: overlay;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.004) 8.1%,
+    rgba(0, 0, 0, 0.016) 15.5%,
+    rgba(0, 0, 0, 0.03) 22.5%,
+    rgba(0, 0, 0, 0.055) 29%,
+    rgba(0, 0, 0, 0.08) 35.3%,
+    rgba(0, 0, 0, 0.11) 41.2%,
+    rgba(0, 0, 0, 0.14) 47.1%,
+    rgba(0, 0, 0, 0.17) 52.9%,
+    rgba(0, 0, 0, 0.2) 58.8%,
+    rgba(0, 0, 0, 0.23) 64.7%,
+    rgba(0, 0, 0, 0.255) 71%,
+    rgba(0, 0, 0, 0.28) 77.5%,
+    rgba(0, 0, 0, 0.294) 84.5%,
+    rgba(0, 0, 0, 0.306) 91.9%,
+    rgba(0, 0, 0, 0.31) 100%
+  );
+}
+
+.main-img-wrapper {
+  position: relative;
+  margin: 0px;
+  border: 3px solid white;
+  border-radius: 16px 16px 0px 0px;
+  overflow: hidden;
+  color: white;
+}
+
+.main-title-on-img {
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+
+.sub-title-on-img {
+  font-size: 1.5rem;
+}
+
+iframe {
+  border-radius: 5px;
+}
+
+.on-img-title-wrapper {
+  position: absolute;
+  right: 10%;
+  text-align: right;
+  bottom: 10%;
+  margin: 0px auto;
+}
+
+.main-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  color: hsl(225deg, 15%, 15%);
+  margin-bottom: 2.5rem;
+}
+
+.link {
+  color: hsl(333deg, 100%, 45%);
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px hsl(333deg, 100%, 45%);
+  transition: box-shadow 100ms ease 0s;
+}
+
+.note {
+  border-right: 3px solid hsl(245deg, 100%, 60%);
+  background: hsl(210deg, 55%, 92%);
+  --syntax-bg: hsl(210deg, 30%, 85%);
+}
+
+.warn {
+  border-right: 3px solid hsl(37deg, 100%, 50%);
+  background: hsla(52deg, 100%, 50%, 0.25);
+  --syntax-bg: hsl(210deg, 30%, 85%);
+}
+
+.warn code {
+  background-color: hsl(45deg 70% 82%);
+}
+
+.note code {
+  background-color: hsl(210deg, 30%, 85%);
+}
+
+.info-field {
+  /*error-color: hsl(340deg,95%,46%); */
+  padding: 28px 32px 32px;
+  position: relative;
+  display: block;
+  margin: 16px -32px 64px;
+  border-radius: 6px 6px 3px 6px;
+}
+
+.info-field > .info-icon {
+  position: absolute;
+  top: 0px;
+  right: -48px;
+  transform: translate(-50%, -50%);
+  padding: 8px;
+  background: hsl(0deg, 0%, 100%);
+  border-radius: 50%;
+}
+
+.info-field .aside-header {
+  display: block;
+  font-size: 1.8rem;
+  margin-bottom: 1em;
+  font-weight: 600;
+  scroll-margin-top: 64px;
+}
+
+.warn > .info-icon {
+  color: hsl(37deg, 100%, 50%);
+}
+
+.note > .info-icon {
+  color: hsl(245deg, 100%, 60%);
+}
+
+pre {
+  position: relative;
+  margin-top: 8px;
+  margin-bottom: 40px;
+  background-color: hsl(225deg, 25%, 97%);
+}
+
+code {
+  position: relative;
+  background-color: hsl(225deg, 25%, 97%);
+  font-family: "Source Code Pro", "Fira Mono", monospace;
+  border-radius: 3px;
+  display: inline;
+  font-size: 0.8em;
+  letter-spacing: -0.5px;
+  padding: 3px 6px;
+}
+
+pre code {
+  border-radius: 8px;
+  font-size: 14px;
+  padding: 28px 32px 32px;
+  display: block;
+  overflow: auto;
+  max-width: min(100% + 64px, 814px);
+}
+
+code div {
+  color: #2a2a2a;
+  padding: 0px;
+  font-weight: 500;
+}
+
+code .selector {
+  color: #aa00ff;
+}
+
+code .property {
+  color: #da0079;
+}
+
+code .comment {
+  color: #2a2a2ab5;
+}
+
+.link:hover {
+  box-shadow: 0px 2px 0px hsl(333deg, 100%, 45%);
+}
+
+.sec-title {
+  font-size: 2rem;
+  color: hsl(333deg, 100%, 45%);
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  margin-top: 1.75em;
+  margin-bottom: 24px;
+  scroll-margin-top: 64px;
+}
+
+.sub-sec-title {
+  font-size: 1.5rem;
+  color: hsl(255deg, 85%, 30%);
+  font-weight: 400;
+  margin-top: 1.75em;
+  margin-bottom: 1em;
+  scroll-margin-top: 64px;
+}
+
+.list {
+  font-size: 1.125rem;
+  margin-top: 0;
+  padding-right: 0;
+  margin-bottom: 32px;
+  line-height: 1.5;
+  list-style: none;
+}
+
+.list li {
+  display: flex;
+  margin-bottom: 16px;
+  align-items: baseline;
+  -webkit-box-align: baseline;
+}
+
+.list span {
+  display: inline-block;
+  padding-left: 16px;
+  padding-top: 0px;
+  transform: translateY(9px);
+  fill: hsl(245deg, 100%, 60%);
+}
+
+.centered-img {
+  margin: 0px auto 32px;
+  isolation: isolate;
+  position: relative;
+}
+
+.centered-img img {
+  display: block;
+  max-width: 100%;
+  margin: auto;
+  border-radius: 3px;
+  position: relative;
+  cursor: pointer;
+}
+
+.video-wrapper {
+  margin: 0px auto 32px;
+  isolation: isolate;
+  position: relative;
+}
+
+.video-wrapper > video {
+  display: block;
+  max-width: 100%;
+  margin: auto;
+  border-radius: 3px;
+  position: relative;
+  cursor: pointer;
+}
+
+.list div {
+  flex: 1 1 0%;
+}
+
+p {
+  margin-bottom: 1.5em;
+  font-size: 1.5rem;
+}
+
+p > :last-child {
+  margin-bottom: 0;
+}
+
+.background-color {
+  background-color: hsl(0deg, 0%, 100%);
+}
+/* ///////////////////////////////////////// */
+
+@media (min-width: 64.0625rem) {
+}
+
+@media (max-width: 64rem) {
+  .container {
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 48rem) {
+  .content-wrapper {
+    padding: 16px;
+  }
+  .sub-title-on-img {
+    font-size: 1rem;
+  }
+
+  .main-title-on-img {
+    font-size: 1.5rem;
+  }
+}
