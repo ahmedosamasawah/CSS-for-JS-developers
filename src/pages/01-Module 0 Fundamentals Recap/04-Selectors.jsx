@@ -1,6 +1,7 @@
 import Span from "../../components/Span";
 import CodeBlock from "../../components/CodeBlock";
 import CustomTitle from "../../components/CustomTitle";
+import { NavLink } from "react-router-dom";
 
 const codeBlock = [
   {
@@ -43,6 +44,18 @@ const Selectors = () => {
           الأمر، وهو إزالة الخط السفلي.
         </p>
       </article>
+      <footer>
+        <div>
+          <NavLink to="/PseudoClasses" className="next">
+            التالي
+          </NavLink>
+        </div>
+        <div>
+          <NavLink to="/MediaQueries" className="prev">
+            السابق
+          </NavLink>
+        </div>
+      </footer>
     </main>
   );
 };

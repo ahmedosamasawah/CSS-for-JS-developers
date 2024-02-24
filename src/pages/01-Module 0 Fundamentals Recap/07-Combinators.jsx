@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 const Combinators = () => {
   return (
     <main className="container">
@@ -118,6 +120,18 @@ const Combinators = () => {
           ) on <a href="https://codepen.io">CodePen</a>.
         </iframe>
       </article>
+      <footer>
+        <div>
+          <NavLink to="/Exercise" className="next">
+            التالي
+          </NavLink>
+        </div>
+        <div>
+          <NavLink to="/PseudoElements" className="prev">
+            السابق
+          </NavLink>
+        </div>
+      </footer>
     </main>
   );
 };

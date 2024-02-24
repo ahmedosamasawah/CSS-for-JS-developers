@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import CodeBlock from "../../components/CodeBlock";
 
 const codeBlock = [
@@ -56,6 +57,18 @@ const AnatomyOfStyleRule = () => {
           alt="Anatomy of a Style Rule Diagram"
         />
       </section>
+      <footer>
+        <div>
+          <NavLink to="/MediaQueries" className="next">
+            التالي
+          </NavLink>
+        </div>
+        <div>
+          <NavLink to="/" className="prev">
+            السابق
+          </NavLink>
+        </div>
+      </footer>
     </main>
   );
 };

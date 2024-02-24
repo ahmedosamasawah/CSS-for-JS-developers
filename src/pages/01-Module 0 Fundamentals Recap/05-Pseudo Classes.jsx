@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import CustomTitle from "../../components/CustomTitle";
 import InfoField from "../../components/InfoField";
 import Span from "../../components/Span";
@@ -194,6 +195,18 @@ const PseudoClasses = () => {
           حالتها.
         </p>
       </article>
+      <footer>
+        <div>
+          <NavLink to="/PseudoElements" className="next">
+            التالي
+          </NavLink>
+        </div>
+        <div>
+          <NavLink to="/Selectors" className="prev">
+            السابق
+          </NavLink>
+        </div>
+      </footer>
     </main>
   );
 };

@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import CodeBlock from "../../components/CodeBlock";
 import CustomTitle from "../../components/CustomTitle";
 import InfoField from "../../components/InfoField";
@@ -316,6 +317,16 @@ const Units = () => {
           جدًا، لذلك لن نغطيها.
         </p>
       </article>
+      <footer>
+        <div>
+          <NavLink></NavLink>
+        </div>
+        <div>
+          <NavLink to="/Exercise" className="prev">
+            السابق
+          </NavLink>
+        </div>
+      </footer>
     </main>
   );
 };

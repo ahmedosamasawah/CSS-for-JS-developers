@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import ModuleHeader from "../../components/ModuleHeader";
 
 const Introduction = () => {
@@ -27,6 +28,16 @@ const Introduction = () => {
           معلوماتك وتمنحك بعض الإضافات الجديدة!
         </p>
       </article>
+      <footer>
+        <div>
+          <NavLink to="/AnatomyOfStyleRule" className="next">
+            التالي
+          </NavLink>
+        </div>
+        <div>
+          <NavLink className="prev"></NavLink>
+        </div>
+      </footer>
     </main>
   );
 };

@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import CodeBlock from "../../components/CodeBlock";
 import CustomTitle from "../../components/CustomTitle";
 import List from "../../components/List";
@@ -127,6 +128,18 @@ const Exercise = () => {
         <List items={listItems3} />
         <CodeBlock blocks={codeBlock2} />
       </article>
+      <footer>
+        <div>
+          <NavLink to="/Units" className="next">
+            التالي
+          </NavLink>
+        </div>
+        <div>
+          <NavLink to="/Combinators" className="prev">
+            السابق
+          </NavLink>
+        </div>
+      </footer>
     </main>
   );
 };

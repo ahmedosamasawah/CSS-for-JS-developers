@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import CustomTitle from "../../components/CustomTitle";
 import InfoField from "../../components/InfoField";
 
@@ -171,6 +172,18 @@ const PseudoElements = () => {
           ) on <a href="https://codepen.io">CodePen</a>.
         </iframe>
       </article>
+      <footer>
+        <div>
+          <NavLink to="/Combinators" className="next">
+            التالي
+          </NavLink>
+        </div>
+        <div>
+          <NavLink to="/PseudoClasses" className="prev">
+            السابق
+          </NavLink>
+        </div>
+      </footer>
     </main>
   );
 };

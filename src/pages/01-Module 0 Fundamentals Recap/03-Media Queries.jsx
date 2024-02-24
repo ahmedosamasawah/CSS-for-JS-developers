@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import CodeBlock from "../../components/CodeBlock";
 import Span from "../../components/Span";
 
@@ -150,6 +151,18 @@ const MediaQueries = () => {
           <span style={{ color: " #da0079" }}> humberger</span>.
         </p>
       </article>
+      <footer>
+        <div>
+          <NavLink to="/Selectors" className="next">
+            التالي
+          </NavLink>
+        </div>
+        <div>
+          <NavLink to="/AnatomyOfStyleRule" className="prev">
+            السابق
+          </NavLink>
+        </div>
+      </footer>
     </main>
   );
 };
